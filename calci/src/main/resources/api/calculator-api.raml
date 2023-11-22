@@ -1,0 +1,66 @@
+#%RAML 1.0
+title: calculator-api
+version: v1
+protocols:
+  - HTTP
+  - HTTPS
+traits:
+  que: !include /traits/trait.raml
+mediaType: [application/json]
+/addition:
+  get:
+    is: [que]
+    responses:
+      200:
+       body:
+          example: !include /examples/addition-response.json 
+/subtraction:
+  get:
+    is: [que]
+    responses:
+      200:
+        body:
+            example: !include /examples/subtraction-response.json
+/multiplication:
+  get:
+    is: [que]
+    responses:
+      200:
+        body:
+            example: !include /examples/multiplication-response.json 
+/division:
+  get:
+    is: [que]
+    responses:
+      200:
+        body:
+            example: !include /examples/division-response.json
+              
+
+            
+    
+  
+
+            
+
+
+
+    
+
+          
+    
+    
+    
+
+
+
+
+         
+  
+        
+
+
+
+
+  
+
